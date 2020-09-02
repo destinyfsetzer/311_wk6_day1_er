@@ -8,19 +8,20 @@ You should already have MySQL installed from last week but if you don't, please 
 
 ##### Disable Binary Logging (Google Cloud)
 
-We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later. 
+We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later.
 
-1. Navigate to cloud.google.com and make sure you are logged in. 
+1. Navigate to cloud.google.com and make sure you are logged in. *DONE*
 
-2. Navigate to your SQL instance (Cloud SQL)
+2. Navigate to your SQL instance (Cloud SQL) *DONE*
 
-3. Under the "configuration" tab on the right side of your screen, select "edit configuration"
+3. Under the "configuration" tab on the right side of your screen, select "edit configuration" *DONE*
 
-4. Under "Enable auto backups" DESELECT "enable binary logging"
+4. Under "Enable auto backups" DESELECT "enable binary logging" *DONE*
 
-5. Save and restart the instance
+5. Save and restart the instance *DONE*
 
 ##### Import data
+*DONE*
 
 We are going to use a sample schema given to use by MySQL.
 
@@ -32,7 +33,7 @@ We are going to use a sample schema given to use by MySQL.
   * Likely `cd ~/Downloads/sakila-db`
 
 3. Run the connect command followed by `< sakila-schema.sql` to load that database
-  * `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
+  * `mysql -u root -h <35.194.33.159> -p < sakila-schema.sql`
 
 4. After the operation is complete (may take a couple mins) you should have automatically been exited from the `mysql` command
 
@@ -49,6 +50,7 @@ We are going to use a sample schema given to use by MySQL.
 10. You should see many tables under this database
 
 ##### Create ER Diagram
+*DONE*
 
 1. With MySQL Workbench open, click the "Database" tab
 
@@ -66,13 +68,13 @@ We are going to use a sample schema given to use by MySQL.
 
 8. Answer the following questions about this diagram
 
-##### ER Diagram Diagnosis 
+##### ER Diagram Diagnosis
 
-1. What is the relationship between the "actor" and "film_actor" tables?
+1. What is the relationship between the "actor" and "film_actor" tables? **one**
 
-2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? **a blue lined filled diamond so it's a NOT NULL simple attribute**
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+3. How many foreign keys does the "payments" table have? How can you tell? **two because both film id and store id have red diamonds: A red colored filled diamond so it's a NOT NULL Foreign Key**
 
 ##### ER Diagram upload
 
