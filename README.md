@@ -74,9 +74,9 @@ We are going to use a sample schema given to use by MySQL.
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? **a blue lined filled diamond so it's a NOT NULL simple attribute**
 
-3. How many foreign keys does the "payments" table have? How can you tell? **two because both film id and store id have red diamonds: A red colored filled diamond so it's a NOT NULL Foreign Key**
+3. How many foreign keys does the "payments" table have? How can you tell? **THREE because both film id and store id have red diamonds: A red colored filled diamond so it's a NOT NULL Foreign Key****is a red colored not filled diamond so it's a Foreign Key which can be NULL**
 
-##### ER Diagram upload
+##### ER Diagram upload **DONE**
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
